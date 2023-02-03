@@ -1,0 +1,264 @@
+body
+{
+  height: 100%;
+  width: 100%;
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+  background-color: #FDFEFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100%;
+
+}
+/* BARRA DE NAVEGACIÓN */
+header {
+  background: #82E0AA;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  transition: 0,7s;
+  justify-content: center;
+  z-index: 5;
+  margin: 0;
+}
+
+nav 
+{
+  float: left; 
+  padding: 0;
+  margin: 0;
+  
+}
+
+nav ul 
+{
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li 
+{
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a 
+{
+  display: block; 
+  padding: 20px 12px;
+  padding-top: 12px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+nav ul li :hover {
+  background-color: #F5B041;
+}
+
+.contenedor
+{
+position: absolute;
+width: 100%;
+max-width: 1000px;
+min-height: 100px;
+background: #F8F9F9;
+top: 0;
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 10px 45px #AEB6BF;
+z-index: 20;
+}
+/* Columna Izquierdo */
+
+.contenedor .lado-izquierdo
+{
+position: relative;
+background: #F7DC6F;
+padding-top: 40px;
+
+}
+.texto-foto
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 10px;
+border-bottom: 1px #A3E4D7;
+}
+.texto-foto .foto-perfil
+{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ border-radius: 60%;
+ overflow: hidden;
+}
+.texto-foto .foto-perfil img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.texto-foto h2
+{
+ color: #EAECEE;
+ font-size: 1.5em;
+ margin-top: 20px;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: 600;
+ line-height: 1.4em;
+}
+.texto-foto h2 span
+{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.info-contactos
+{
+  padding-top: 0px;
+}
+.titulos
+{
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #F5B041;
+}
+.info-contactos ul
+{
+  position: relative;
+}
+.info-contactos ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.info-contactos ul li .iconos
+{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #F5B041;
+}
+.info-contactos ul li span
+{
+  color: #fff;
+  font: 100px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Columna Derecha */
+.contenedor .lado-derecho
+{
+  position: relative;
+  background: aliceblue;
+  padding: 30px;
+  line-height: 0;
+}
+.about
+{
+  margin-bottom: 50px;
+}
+.about:last-child
+{
+  margin-bottom: 0;
+}
+.titulos2
+{
+  color: #82E0AA;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.4em;
+
+}
+.about .caja
+{
+  display: flex;
+  flex-direction: none;
+  margin: 20px 0;
+}
+.about .caja .años-empresa
+{
+  min-width: 150px;
+}
+h6
+{
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 1.0em;
+
+}
+h5
+{
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-style: bold;
+  font-size: 13px;
+  line-height: 1.0em;
+
+}
+h4
+{
+  text-transform: uppercase;
+  color: rgb(2, 2, 2);
+  font-size: 12px;
+  font-style: bold;
+  line-height: 1.0em;
+
+}
+p 
+{ font: bold 12px/1.5 arial, helvetica, sans-serif;
+    vertical-align: middle;
+    text-align: justify; 
+}
+
+button {
+  background-color: #A3E4D7;
+  color: #fff;
+  text-decoration: none;
+  border-color: aliceblue;
+}
